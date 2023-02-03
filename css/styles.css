@@ -216,13 +216,7 @@ body {
 }
 
 
-@media screen and (max-width: 767px) {
-  .soft-list {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 767px) {
   .soft-list {
     display: none;
   }
@@ -286,9 +280,6 @@ body {
   }
 }
 
-
-
-
 .indent-title {
   font-size: 36px;
   line-height: 1.11;
@@ -343,11 +334,10 @@ body {
   border-radius: 4px;
 }
 .btn-container {
-  display: block;
+
 }
 
 .soft-list {
-  display: block;
   list-style: none;
   padding-left: 0;
   margin: 0;
@@ -358,10 +348,15 @@ body {
 @media screen and (min-width: 768px) {
   .soft-list {
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    row-gap: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
   }
 }
-
-
 @media screen and (min-width: 768px) {
   .soft-link {
     display: none;
@@ -379,16 +374,11 @@ body {
 
 @media screen and (min-width: 767px) {
   .soft-item {
-    display: flex;
-    flex-wrap: wrap;
-    width: 356px;
     height: 120px;
     width: calc((100% - 24px) / 2);
 
   }
 }
-
-
 .soft-link {
   display: none;
   align-items: center;
@@ -405,8 +395,6 @@ body {
     display: flex;
   }
 }
-
-
 .soft-icon {
   fill: #2e2f42;
 }
@@ -422,14 +410,13 @@ body {
   .soft-skills {
    display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    text-align: start;
     column-gap: 24px;
     row-gap: 72px;
+  
   }
 }
-
 .section-size {
-  
   margin-top: 96px;
   text-align: center;
   
@@ -437,16 +424,18 @@ body {
 
 @media screen and (min-width: 768px) {
   .section-size {
-    padding-top: 120px;
-  padding-bottom: 120px;
+  margin-bottom: 96px;
   }
 }
-
 .section-size-work {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-
+@media screen and (min-width: 768px) {
+  .section-size-work {
+    display: none;
+  }
+}
 @media screen and (min-width: 768px) {
   .about-list-team {
     display: none;
@@ -454,20 +443,15 @@ body {
 }
 .about-list-team {
   text-align: center;
+
 }
 
 @media screen and (min-width: 768px) {
   .about-list-team {
     display: flex;
-    gap: 24px;
-    justify-content: center;
+    flex-wrap: wrap;
+    width: calc((100% - 24px) / 2);
 
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .about-list-team {
-    display: flex;
   }
 }
 
@@ -491,7 +475,6 @@ body {
   text-transform: capitalize;
   margin-bottom: 72px;
 }
-
 .subtitle {
   box-sizing: border-box;
   font-size: 36px;
@@ -537,7 +520,7 @@ body {
   padding: 0;
   padding-top: 96px;
   padding-bottom: 128px;
-  
+  margin-top: 96px;
 }
 
 @media screen and (min-width: 1199px) {
@@ -833,7 +816,6 @@ img {
   background-color: #2e2f42;
   padding-top: 96px;
   padding-bottom: 96px;
-
 }
 
 @media screen and (min-width: 768px) {
