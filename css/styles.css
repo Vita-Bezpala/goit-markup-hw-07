@@ -379,15 +379,12 @@ body {
 
 @media screen and (min-width: 767px) {
   .soft-item {
-    
-  }
-}
+    display: flex;
+    flex-wrap: wrap;
+    width: 356px;
+    height: 120px;
+    width: calc((100% - 24px) / 2);
 
-@media screen and (min-width: 1199px) {
-  .soft-item {
-    width: 264px;
-    height: 112px;
-    width: calc((100% - 72px) / 4);
   }
 }
 
@@ -415,9 +412,20 @@ body {
 }
 
 .soft-skills {
-  font-size: 20px;
-  line-height: 1.2;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
   margin-bottom: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .soft-skills {
+   display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
 }
 
 .section-size {
@@ -464,6 +472,7 @@ body {
 }
 
 .text {
+  text-align: justify;
   color: #434455;
   order: 1;
   flex-grow: 0;
@@ -508,7 +517,7 @@ body {
 }
 
 .img-item {
-  width: 264px;
+  width: 100%;
   margin-bottom: 72px;
   /* width: calc((100% - 48px) / 4); */
 }
@@ -596,25 +605,44 @@ body {
 
 .customers-list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: calc((100% - 16px ) / 2 );
-  gap: 88px;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 16px;
+    row-gap: 72px;
 }
 
 @media screen and (min-width: 768px) {
   .customers-list {
     display: flex;
     flex-wrap: wrap;
+    gap: 24px;
   justify-content: center;
     width: calc((100% - 48px) / 3);
   }
 }
 
 .customers-item {
-  width: 168px;
   height: 88px;
+  width: calc((100% - 16px) / 2);
 }
+  
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .customers-item {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc((100% - 72px) / 3);
+  height: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .customers-item {
+    display: flex;
+  height: 88px;
+  
+  }
+}
+
 
 .customers-link {
   display: flex;
@@ -735,7 +763,7 @@ body {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -803,14 +831,16 @@ img {
 }
 .footer-background {
   background-color: #2e2f42;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 96px;
+  padding-bottom: 96px;
+
 }
 
 @media screen and (min-width: 768px) {
   .footer-background {
     padding-top: 100px;
   padding-bottom: 100px;
+  height: 662px;
 
   }
 }
@@ -821,9 +851,13 @@ img {
 
 .footer-content {
   margin: 0;
-  padding-top: 16px;
-  min-width: 320px;
-  /* width: 264px; */
+    margin-top: 16px;
+}
+@media screen and (min-width: 768px) {
+  .footer-content {
+   width: 264px;
+
+  }
 }
 
 .footer-social {
@@ -874,7 +908,7 @@ img {
 }
 
 .footer-container {
-  max-width: 256px;
+  margin-bottom: 72px;
 }
 .footer-background .container {
   display: block;
