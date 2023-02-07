@@ -826,15 +826,7 @@ img {
   background-color: #2e2f42;
   padding-top: 96px;
   padding-bottom: 96px;
-}
-
-@media screen and (min-width: 768px) {
-  .footer-background {
-    padding-top: 100px;
-  padding-bottom: 100px;
   height: 662px;
-
-  }
 }
 
 .footer-logo {
@@ -845,9 +837,8 @@ img {
 .footer-content {
   width: 268px;
   height: 72px;
-  justify-content: center;
     margin-top: 16px;
-    text-align: center;
+    margin-left: 80px;
 }
 
 .footer-social {
