@@ -38,20 +38,22 @@ ol {
   outline: 1px solid red;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px){
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .container {
-      min-width: 481px;
-      max-width: 768px;  
-  }}
+    min-width: 481px;
+    max-width: 768px;
+  }
+}
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px) {
   .container {
-      min-width: 1158px;
-  max-width: 1200px;
-      padding-left: 15px;
-      padding-right: 15px;
-     width: 1158px;
-    }}
+    min-width: 1158px;
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1158px;
+  }
+}
 
 :root {
   --color-hover-focus: #4d5ae5;
@@ -163,20 +165,21 @@ body {
 
 @media screen and (min-width: 768px) {
   .primary-nav {
-      display:flex ;
-      align-items: center;
-  }} 
+    display: flex;
+    align-items: center;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .primary-nav {
-        height: 70px;
-    } }
+    height: 70px;
+  }
+}
 
 .nav-items {
   display: flex;
   align-items: center;
   gap: 40px;
-
   padding-top: 24px;
   margin-bottom: 24px;
   margin-left: auto;
@@ -195,7 +198,22 @@ body {
   }
 }
 
-.mobile-menu-open{
+.contact-tablet {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-tablet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 4px;
+    margin-left: 118px;
+    margin-bottom: 9px;
+  }
+}
+
+.mobile-menu-open {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -214,7 +232,6 @@ body {
   }
 }
 
-
 @media screen and (min-width: 767px) {
   .soft-list {
     display: none;
@@ -226,11 +243,12 @@ body {
     display: none;
   }
 }
-  
-
 .contact-link {
   color: #434455;
   font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  line-height: 1.33;
   transition: color var(--transition);
 }
 
@@ -267,15 +285,14 @@ body {
   margin: auto;
   background-position: center;
   padding-top: 112px;
-    padding-bottom: 112px;
-  
+  padding-bottom: 112px;
 }
 
 @media screen and (min-width: 768px) {
   .section-background {
     max-width: 1440px;
     padding-top: 192px;
-  padding-bottom: 192px;
+    padding-bottom: 192px;
   }
 }
 
@@ -295,8 +312,8 @@ body {
     margin: 0 auto;
     margin-bottom: 40px;
     font-weight: 700;
-font-size: 56px;
-line-height: 60px;
+    font-size: 56px;
+    line-height: 60px;
   }
 }
 
@@ -336,7 +353,6 @@ line-height: 60px;
   border-radius: 4px;
 }
 .btn-container {
-
 }
 
 .soft-list {
@@ -344,7 +360,6 @@ line-height: 60px;
   padding-left: 0;
   margin: 0;
   gap: 24px;
-  
 }
 
 @media screen and (min-width: 768px) {
@@ -356,7 +371,6 @@ line-height: 60px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
   }
 }
 @media screen and (min-width: 768px) {
@@ -367,18 +381,17 @@ line-height: 60px;
 
 .soft-item {
   font-size: 16px;
-    line-height: 1.5;
-    margin-top: 0;
-    margin-bottom: 0;
- gap: 8px;
- margin-top: 72px;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  gap: 8px;
+  margin-top: 72px;
 }
 
 @media screen and (min-width: 767px) {
   .soft-item {
     height: 120px;
     width: calc((100% - 24px) / 2);
-
   }
 }
 .soft-link {
@@ -410,23 +423,21 @@ line-height: 60px;
 
 @media screen and (min-width: 768px) {
   .soft-skills {
-   display: flex;
+    display: flex;
     flex-wrap: wrap;
     text-align: start;
     column-gap: 24px;
     row-gap: 72px;
-  
   }
 }
 .section-size {
   margin-top: 96px;
   text-align: center;
-  
 }
 
 @media screen and (min-width: 768px) {
   .section-size {
-  margin-bottom: 96px;
+    margin-bottom: 96px;
   }
 }
 .section-size-work {
@@ -445,7 +456,6 @@ line-height: 60px;
     justify-content: center;
     row-gap: 64px;
     column-gap: 24px;
-   
   }
 }
 .about-list-team {
@@ -592,16 +602,14 @@ line-height: 60px;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 72px;
-  
 }
 
 .customers-list {
   display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    column-gap: 16px;
-    row-gap: 72px;
-    
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 16px;
+  row-gap: 72px;
 }
 
 @media screen and (min-width: 768px) {
@@ -610,7 +618,7 @@ line-height: 60px;
     flex-wrap: wrap;
     row-gap: 72px;
     column-gap: 24px;
-  justify-content: center;
+    justify-content: center;
   }
 }
 
@@ -618,24 +626,22 @@ line-height: 60px;
   height: 88px;
   width: calc((100% - 16px) / 2);
 }
-  
+
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .customers-item {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 168px;
-  height: 88px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 168px;
+    height: 88px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .customers-item {
     display: flex;
-  height: 88px;
-  
+    height: 88px;
   }
 }
-
 
 .customers-link {
   display: flex;
@@ -834,16 +840,37 @@ img {
   margin: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-logo {
+    justify-content: left;
+    margin-left: 108px;
+  }
+}
+
 .footer-content {
   width: 268px;
   height: 72px;
-    margin-top: 16px;
-    margin-left: 80px;
+  margin-top: 16px;
+  margin-left: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-content {
+    flex-wrap: wrap;
+    text-align: left;
+    margin-left: 108px;
+  }
 }
 
 .footer-social {
   margin-top: 72px;
   margin-bottom: 72px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-social {
+    margin-left: 24px;
+  }
 }
 
 .footer-soc-list {
@@ -852,7 +879,6 @@ img {
   justify-content: center;
   gap: 16px;
 }
-
 
 .footer-soc-item {
   width: 40px;
@@ -866,6 +892,12 @@ img {
   margin-top: 0;
   margin-bottom: 16px;
   color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-soc-title {
+    text-align: left;
+  }
 }
 
 .footer-soc-icon {
@@ -888,9 +920,9 @@ img {
 }
 
 .footer-container {
-
   /* margin-bottom: 72px; */
 }
+
 .footer-background .container {
   align-items: baseline;
 }
@@ -909,19 +941,18 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer-box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .subscribe-wrap {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;
-}
-
-@media screen and (min-width: 768px) {
-  .subscribe-form {
-    display: flex;
-    flex-wrap: wrap;
-  justify-content: center;
-  }
 }
 
 .subscribe-title {
@@ -934,17 +965,28 @@ img {
   margin-bottom: 16px;
 }
 
+@media screen and (min-width: 768px) {
+  .subscribe-wrap {
+    flex-direction: column;
+    text-align: left;
+    margin-left: 108px;
+  }
+}
+
 .subscribe-form {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap:  16px;
+  gap: 16px;
 }
 
 @media screen and (min-width: 768px) {
   .subscribe-form {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 24px;
   }
 }
 
@@ -965,6 +1007,12 @@ img {
   padding-top: 8px;
   padding-bottom: 8px;
   transition: var(--transition), border var(--transition);
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-email-input {
+    width: 264px;
+  }
 }
 
 .subscribe-email-input:focus {
@@ -989,14 +1037,13 @@ img {
   border-radius: 4px;
   border: none;
   cursor: pointer;
-  transition: var(--transition), background-color var(--transition) ;
+  transition: var(--transition), background-color var(--transition);
 }
 
 .subscribe-btn:hover,
 .subscribe-btn:focus {
-  background-color:#404BBF;
+  background-color: #404bbf;
 }
-
 
 .subscribe-email-icon {
   width: 24px;
@@ -1120,7 +1167,6 @@ img {
 
 .modal-form-input:focus {
   border: 1px solid #4d5ae5;
-  
 }
 
 .modal-form-input:focus + .modal-icon {
@@ -1205,7 +1251,6 @@ img {
 .modal-form-send:hover,
 .modal-form-send:focus {
   background-color: #404bbf;
-  
 }
 
 .modal-user-policy {
@@ -1235,7 +1280,6 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   align-items: center;
-  
 }
 
 .modal-form-check:focus + .modal-form-check-desc::before {
@@ -1255,39 +1299,5 @@ img {
 }
 
 /* MEDIA */
-
-
-
-
-
-
-/* ФУТЕР
-@media screen and (max-width: 1199px) {
-.footer-background {
-    padding-top: 96px;
-    padding-bottom: 96px;
-}
-}
-
-@media screen and (max-width: 768px) {
-.footer-box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-}
-.margin-right {
-  margin-right: 0;
-  margin-bottom: 72px;
-}
-.subscribe-wrap {
-  display: block;
-    margin-left: 0;
-}
-.input-footer {
-  margin-bottom: 16px;
-  width: 100%;
-}
-} */
 
 
