@@ -39,11 +39,6 @@
             </li>
           </ul>
         </nav>
-        <button type="button" class="mobile-menu-open">
-          <svg class="menu-icon" width="32" height="22">
-            <use href="./images/icons.svg#burger-icon"></use>
-          </svg>
-        </button>
         <ul class="list nav-items contact-tablet">
           <li>
             <a href="mailto:info@devstudio.com" class="contact-link link"
@@ -57,6 +52,79 @@
           </li>
         </ul>
       </div>
+      <!-- MOB-MENU -->
+      <button type="button" class="mobile-menu-open js-open-men">
+        <svg class="menu-icon" width="32" height="22">
+          <use href="./images/icons.svg#burger-icon"></use>
+        </svg>
+      </button>
+      <div class="container mob-menu-container js-menu-container">
+      <div class="mob-menu">
+        <button type="button" class="mobile-menu-close .js-close-menu">
+          <svg class="menu-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="list mob-menu-list">
+          <li>
+            <a href="./index.html" class="mob-menu-link-con link current"
+              >Studio</a
+            >
+          </li>
+          <li>
+            <a href="./portfolio.html" class="mob-menu-link-con link"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a href="Contacts" class="mob-menu-link-con link">Contacts</a>
+          </li>
+        </ul>
+        <ul class="list mob-menu-nav-items mob-menu-contact-tablet">
+          <li>
+            <a href="tel:110001111111" class="mob-menu-contact-link link"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li>
+            <a href="mailto:info@devstudio.com" class="mob-menu-contact-link-mail link"
+              >info@devstudio.com</a
+            >
+          </li>
+        
+        </ul>
+        <ul class="mob-menu-list list">
+          <li class="mob-menu-item">
+            <a href="" class="mob-menu-link link">
+              <svg class="mob-menu-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-instagram-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-menu-item">
+            <a href="" class="mob-menu-link link">
+              <svg class="mob-menu-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-twitter-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-menu-item">
+            <a href="" class="mob-menu-link link">
+              <svg class="mob-menu--icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-facebook-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-menu-item">
+            <a href="" class="mob-menu-link link">
+              <svg class="mob-menu--icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-linkedin-1"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
     </header>
     <main>
       <!-- СЕКЦІЯ 1 -->
@@ -578,6 +646,8 @@
         </form>
       </div>
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
+    
   </body>
 </html>
