@@ -117,26 +117,41 @@ position: relative;
 
 .mobile-menu-close {
   position: absolute;
-  background: #E7E9FC;
+  display: flex;
+  background-color: #E7E9FC;
   border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 10px solid rgba(0, 0, 0, 0.1);
   line-height: 1;
   top: 40px;
   right: 40px;
   cursor: pointer;
 }
 .menu-icon {
+  
 }
 
-.mob-menu-list {
+.mob-menu-list{
+  margin-bottom: 284px;
+}
+
+.mob-menu-list-icon {
+  display: flex;
+    align-items: center;
+  column-gap: 56px;
+  margin-top: 48px;
+  fill: #ffffff;
+  
 }
 
 .mob-menu-link-con {
+  
   font-weight: 600;
   font-size: 36px;
   line-height: 1.11;
   text-transform: capitalize;
-  color: #4D5AE5;
+  color: #2E2F42;
+  margin-bottom: 40px;
+  
   
 }
 .mob-menu-link-con:not(:last-child) {
@@ -149,7 +164,7 @@ position: relative;
 font-size: 36px;
 line-height: 1.11;
 text-transform: capitalize;
-color: #4D5AE5;
+color: #2E2F42;
 
 }
 
@@ -163,8 +178,18 @@ margin-top: 284px;
 }
 
 
-.mob-menu--item {
+.mob-menu-item-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 40px;
+height: 40px;
+background-color: #4D5AE5;
 }
+
+
+
 .mob-menu-link {
 font-weight: 700;
 font-size: 36px;
@@ -180,6 +205,7 @@ color: #2E2F42;
 
 
 .mob-menu--icon {
+  
 }
 
 /* Top */
