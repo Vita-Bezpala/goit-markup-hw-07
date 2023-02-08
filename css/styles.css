@@ -125,10 +125,27 @@ position: relative;
   top: 40px;
   right: 40px;
   cursor: pointer;
+  
+  transform: var(--transition);
+}
+
+.mobile-menu-close:hover {
+  background-color: #404bbf;, fill: #ffffff;
+}
+
+.mobile-menu-close:hover .menu-icon,
+.mobile-menu-close:focus .menu-icon {
+  background-color: #404bbf;, fill: #ffffff;
 }
 .menu-icon {
-  
+  fill: #000000;
 }
+
+.menu-icon:hover,
+.menu-icon:focus {
+fill: #ffffff;
+}
+
 
 .mob-menu-list{
   margin-bottom: 284px;
@@ -139,24 +156,25 @@ position: relative;
     align-items: center;
   column-gap: 56px;
   margin-top: 48px;
-  fill: #ffffff;
-  
+  transform: var(--transition);
 }
 
+
+
 .mob-menu-link-con {
-  
   font-weight: 600;
   font-size: 36px;
   line-height: 1.11;
   text-transform: capitalize;
   color: #2E2F42;
-  margin-bottom: 40px;
-  
   
 }
-.mob-menu-link-con:not(:last-child) {
-  margin-bottom: 40px;
+
+.mob-menu-link-con:hover,
+.mob-menu-link-con:focus {
+  color: var(--color-hover-focus);
 }
+
 .mob-menu-contact-tablet {
 }
 .mob-menu-contact-link {
@@ -165,18 +183,26 @@ font-size: 36px;
 line-height: 1.11;
 text-transform: capitalize;
 color: #2E2F42;
-
 }
 
-.mob-menu-contact-link-mail {
+.mob-menu-contact-link {
+margin-top: 284px;
+}
+
+.mob-menu-contact-link:hover,
+.mob-menu-contact-link:focus {
+  color: var(--color-hover-focus);
+}
+
+.mob-mail{
   font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: #434455;
-margin-top: 284px;
-}
 
+
+}
 
 .mob-menu-item-icon{
   display: flex;
@@ -185,12 +211,22 @@ margin-top: 284px;
   border-radius: 50%;
   width: 40px;
 height: 40px;
-background-color: #4D5AE5;
+background-color: #4d5ae5;
+transform: var(--transition), background-color var(--transition);
+}
+
+.mob-menu-item-icon:hover,
+.mob-menu-item-icon:focus {
+  background-color: var(--color-hover-focus);
 }
 
 
 
+
 .mob-menu-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 font-weight: 700;
 font-size: 36px;
 line-height: 1.11;
@@ -200,13 +236,14 @@ color: #2E2F42;
 }
 
 .mob-menu-contact-link-mail{
-
+margin-top: 40px;
 }
 
 
-.mob-menu--icon {
-  
+.mob-menu-icon {
+  fill: #ffffff;
 }
+
 
 /* Top */
 
