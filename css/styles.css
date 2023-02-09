@@ -408,6 +408,8 @@ margin-top: 40px;
 
 .mobile-menu-open {
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: 0;
   padding: 0;
   cursor: pointer;
