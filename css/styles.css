@@ -99,8 +99,8 @@ body {
   padding-top: 80px;
   padding-bottom: 40px;
   padding-left: 40px;
-  
   transition: var(--transition), visibility var(--transition);
+  overflow-y: scroll;
 }
 
 .mob-menu-container.is-open {
@@ -146,6 +146,7 @@ opacity: 0;
 .menu-icon:focus {
 fill: #ffffff;
 }
+
 
 
 .mob-menu-list{
@@ -309,8 +310,13 @@ margin-top: 40px;
   background-color: #404bbf;
   border-radius: 2px;
   left: 0;
-  bottom: -26px;
+  bottom: -28px;
 }
+
+
+
+
+
 
 .shadow-header {
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -402,17 +408,20 @@ margin-top: 40px;
 
 .mobile-menu-open {
   display: flex;
-  margin-left: auto;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
   
+  padding: 0;
   cursor: pointer;
   border: none;
   outline: none;
   margin-right: 40px;
   background-color: transparent;
   line-height: 0;
+}
+
+.menu-icon-burger{
+  margin-right: 16px;
+  
+ 
 }
 
 @media screen and (min-width: 768px) {
@@ -608,7 +617,7 @@ margin-top: 40px;
   list-style: none;
   padding-left: 0;
   margin: 0;
-  gap: 24px;
+  
 }
 
 @media screen and (min-width: 768px) {
@@ -616,10 +625,12 @@ margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    row-gap: 24px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    row-gap: 72px;
+    column-gap: 24px;
+    
   }
 }
 @media screen and (min-width: 768px) {
@@ -634,13 +645,14 @@ margin-top: 40px;
   margin-top: 0;
   margin-bottom: 0;
   gap: 8px;
-  margin-top: 72px;
+  margin-bottom: 72px;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .soft-item {
     height: 120px;
     width: calc((100% - 24px) / 2);
+    margin-bottom: 0;
   }
 }
 .soft-link {
@@ -1422,12 +1434,16 @@ img {
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 24px;
+  height: 100%;
+    max-height: 586px;
+    overflow: scroll;
 }
 
 @media screen and (max-width: 767px) {
   .modal {
     width: 100%;
     max-width: 392px;
+    
   }
 }
 
