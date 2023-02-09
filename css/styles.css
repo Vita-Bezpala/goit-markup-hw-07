@@ -99,9 +99,9 @@ body {
   padding-top: 80px;
   padding-bottom: 40px;
   padding-left: 40px;
-  /* opacity: 0;
+  opacity: 0;
   visibility: hidden;
-  pointer-events: none; */
+  pointer-events: none;
   transition: var(--transition), visibility var(--transition);
 }
 
