@@ -408,18 +408,16 @@ margin-top: 40px;
 
 .mobile-menu-open {
   display: flex;
-  
+  margin-left: 0;
   padding: 0;
   cursor: pointer;
   border: none;
   outline: none;
-  margin-right: 40px;
   background-color: transparent;
   line-height: 0;
 }
 
 .menu-icon-burger{
-  margin-right: 16px;
   
  
 }
