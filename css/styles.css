@@ -130,12 +130,12 @@ position: relative;
 }
 
 .mobile-menu-close:hover {
-  background-color: #404bbf;, fill: #ffffff;
+  background-color: #404bbf; fill: #ffffff;
 }
 
 .mobile-menu-close:hover .menu-icon,
 .mobile-menu-close:focus .menu-icon {
-  background-color: #404bbf;, fill: #ffffff;
+  background-color: #404bbf; fill: #ffffff;
 }
 .menu-icon {
   fill: #000000;
@@ -159,6 +159,9 @@ fill: #ffffff;
   transform: var(--transition);
 }
 
+.menu-link{
+  margin-bottom: 40px;
+}
 
 
 .mob-menu-link-con {
@@ -175,8 +178,6 @@ fill: #ffffff;
   color: var(--color-hover-focus);
 }
 
-.mob-menu-contact-tablet {
-}
 .mob-menu-contact-link {
   font-weight: 600;
 font-size: 36px;
@@ -195,7 +196,7 @@ margin-top: 284px;
 }
 
 .mob-mail{
-  font-weight: 500;
+font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
